@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Authentic Shop </title>
+<link rel="icon" href="aut.jpg" />
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"href="style.css">
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+</head>
+<body>
+<div id="nav" class="overlay">
+  
+
+  <a><h1 class="glow" >Authentic Shop        </h1></a>
+  <div class="headd" style="text-align: right; margin-left: 50%; margin-top: 1.5%;" >
+  <a href="authentic.html" target="_self" class=" menu-button">Home</a>
+  <a href="Aboutus.html" target="_blank" class="menu-button">About Us</a>
+  <a href="Products.html" target="_blank" class="menu-button">Our Products</a>
+  <a href="Contact.html" target="_blank" class="menu-button">Contact </a>
+  <a href="cart.html" target="_blank" class="menu-button"><ion-icon name="cart-outline"></ion-icon>Cart<span id="count"> 0 </span></a>
+</div>
+  
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</div>
+<br>
+<br>
+
+
+<table class="about">
+
+<tr>
+<td>
+<img class="omg"  src="outfit2.jpg">
+</td>
+<td>
+<p class="tablepara1"><b> <i>Who are we?</i> <br>
+<b><u>AUTHENTIC</u></b> "of undisputed origin and not a copy; genuine." <br>
+"made or done in the traditional or original way, or in a way that faithfully resembles an original." <br>
+We sell clothes that are authentic, original in a way and perfect for your style! <br> 
+Recycling is our main job. <br>We sell second hand items for a better environment! 
+</b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="tablepara1"> <b><i>Try us out!</i> <br>
+Not only can you buy our clothes, you can even sell your own!<br>
+We seek to find all sorts of clothes and we sell them with the lowest prices. <br>
+Want to sell? Use our <a href="Contact.html" target="_blank" >contact form </a>and we'll get everything covered. You choose the price and EVERYTHING!<br>
+More questions? Use our <a href="Contact.html" target="_blank" >contact form </a>to ask!
+</b></p>
+</td>
+<td>
+<img class="omg" src="outfit3.jpg">
+</td>
+</tr>
+</table>
+<br>
+<br>
+
+
+
+
+
+
+ <footer class="foot">
+            <div class="c1">
+                <a href="https://www.facebook.com/azyza.azza.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/aut.henticshop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <p class="p3">
+                    <i> <b> Powered by</b></i> <i><a href="https://www.facebook.com/azyza.azza.3" target="_blank">The Owner</a></i>
+                </p>
+            </div>
+        </footer>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+
+</html>

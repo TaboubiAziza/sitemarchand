@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Authentic Shop </title>
+<link rel="icon" href="aut.jpg" />
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"href="style.css">
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div id="nav" class="overlay">
+  
+  <a><h1 class="glow" >Authentic Shop        </h1></a>
+  <div class="headd" style="text-align: right; margin-left: 50%; margin-top: 1.5%;" >
+  <a href="authentic.html" target="_self" class=" menu-button">Home</a>
+  <a href="Aboutus.html" target="_blank" class="menu-button">About Us</a>
+  <a href="Products.html" target="_blank" class="menu-button">Our Products</a>
+  <a href="Contact.html" target="_blank" class="menu-button">Contact </a>
+  <a href="cart.html" target="_blank" class="menu-button"><ion-icon name="cart-outline"></ion-icon>Cart<span id="count"> 0 </span></a>
+</div>
+  
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</div><br><br>
+
+<div class="contacct">
+<p>
+<h3><b><i> Welcome to Our <u>Contact Page</u>! <br> Feel Free to ask us whatever you want! <br> </i></b></h3>
+</p> <br> <br>
+</div>
+
+
+<form class="contacct">
+  <label for="fname"><b>First name:</b></label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname"><b>Last name:</b></label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="radio" id="buy" name="cause" value="buy">
+  <label for="buy"><b><i>Buy</i></b></label>
+  <input type="radio" id="sell" name="cause" value="sell">
+  <label for="sell"><b><i>Sell</i></b></label>
+   <input type="radio" id="ask" name="cause" value="ask">
+  <label for="ask"><b><i>Ask</i></b></label><br><br>
+  <label for="fq"><b>Questions</b></label>
+  <input type="text" id="fq" name="fq"><br><br>
+  <label for="myfile"><b>Select a file:</b></label>
+  <input type="file" id="myfile" name="myfile"> <br><br>
+   <input type="submit" value="Submit"> <br><br>
+</form>
+<p> 
+<br><br>
+
+
+
+
+
+
+
+ <footer class="foot">
+            <div class="c1">
+                <a href="https://www.facebook.com/azyza.azza.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/aut.henticshop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <p class="p3">
+                    <i> <b> Powered by</b></i> <i><a href="https://www.facebook.com/azyza.azza.3" target="_blank">The Owner</a></i>
+                </p>
+            </div>
+        </footer>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

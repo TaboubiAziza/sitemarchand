@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Authentic Shop </title>
+<link rel="icon" href="aut.jpg" />
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"href="style.css">
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+</head>
+<body>
+<div id="nav" class="overlay">
+  
+  <a><h1 class="glow" >Authentic Shop        </h1></a>
+  <div class="headd" style="text-align: right; margin-left: 50%; margin-top: 1.5%;" >
+  <a href="authentic.html" target="_self" class=" menu-button">Home</a>
+  <a href="Aboutus.html" target="_blank" class="menu-button">About Us</a>
+  <a href="Products.html" target="_blank" class="menu-button">Our Products</a>
+  <a href="Contact.html" target="_blank" class="menu-button">Contact </a>
+  <a href="cart.html" target="_blank" class="menu-button"><ion-icon name="cart-outline"></ion-icon>Cart<span id="count"> 0 </span></a>
+</div>
+  
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</div>
+
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Tops.html" target="_self">Tops</a>
+  <a href="Bottoms.html" target="_self">Bottoms</a>
+  <a href="Shoes.html" target="_self">Shoes</a>
+  <a href="Accessories.html" target="_self">Accessories</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Sort By</button>
+ <script>
+ /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+</div>
+
+<table class="container" style="margin-left: 10%; margin-right: 20%;"> 
+<tr>
+<td>
+<div class="card">
+  <img src="jacket0.jpg" alt="Pink jacket" style="width:100%">
+  <h1>Pink Jacket</h1>
+  <p class="price">50</p>
+  <p>PINKKKKK</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="jaccket2.jpg" alt="colored jacket" style="width:100%">
+  <h1>Colored Jacket</h1>
+  <p class="price">65.900</p>
+  <p>Oversized jacket A MOOD.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="jacket1.jpg" alt="Brown Jacket" style="width:100%">
+  <h1>Brown Jacket</h1>
+  <p class="price">50</p>
+  <p>Brown oversized comfy jacket.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="jacket3.jpg" alt="leather jacket" style="width:100%">
+  <h1>Leather Jacket</h1>
+  <p class="price">40</p>
+  <p>Brown leather jacket.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="jacket4.jpg" alt="Jean Jacket" style="width:100%">
+  <h1>Jean Jacket</h1>
+  <p class="price">45.500</p>
+  <p>Denim Jacket to rock your outifit!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="jacket5.jpg" alt="colored jacket" style="width:100%">
+  <h1>Colored Jacket</h1>
+  <p class="price">35.900</p>
+  <p>Oversized JACKET.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull0.jpg" alt="pink sweatshirts" style="width:100%">
+  <h1>Sweatshirts</h1>
+  <p class="price">25</p>
+  <p>Shades Of PINKK</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull1.jpg" alt="pink sweatshirts" style="width:100%">
+  <h1>Pink Sweatshirts</h1>
+  <p class="price">25</p>
+  <p>More Shades of PINK!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="pull2.jpg" alt="sweatshirts" style="width:100%">
+  <h1>Winter Sweatshirts</h1>
+  <p class="price">24.900</p>
+  <p>Rockin Winter</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull4.jpg" alt="blue sweatshirts" style="width:100%">
+  <h1>Blue Sweatshirts</h1>
+  <p class="price">24.900</p>
+  <p>BLUEEE.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull5.jpg" alt="sweatshirts" style="width:100%">
+  <h1>sweatshirts</h1>
+  <p class="price">30</p>
+  <p>Perfect sweatshirts for the perfect OUTFIT!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull6.jpg" alt="sweatshirts" style="width:100%">
+  <h1>Light Sweatshirts</h1>
+  <p class="price">35.900</p>
+  <p>Comfy light colored sweatshirts for a sunny day.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="pull7.jpg" alt="sweatshirts" style="width:100%">
+  <h1>Autumn Sweatshirts</h1>
+  <p class="price">45.900</p>
+  <p>Autumn Colored SWEATSHIRTS!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull8.jpg" alt="nike sweatshirt" style="width:100%">
+  <h1>Nike Sweatshirt</h1>
+  <p class="price">54.900</p>
+  <p>NIKE sweatshirt .</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull3.jpg" alt="hearted sweatshirt" style="width:100%">
+  <h1>Heart Sweatshirt</h1>
+  <p class="price">25.900</p>
+  <p>Hearted sweatshirt.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="outfit.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>OUTFIT1</h1>
+  <p class="price">155.900</p>
+  <p>Winter Outfit</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+ <footer class="foot">
+            <div class="c1">
+                <a href="https://www.facebook.com/azyza.azza.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/aut.henticshop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <p class="p3">
+                    <i> <b> Powered by</b></i> <i><a href="https://www.facebook.com/azyza.azza.3" target="_blank">The Owner</a></i>
+                </p>
+            </div>
+        </footer>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

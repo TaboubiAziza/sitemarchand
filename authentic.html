@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Authentic Shop </title>
+<link rel="icon" href="aut.jpg" />
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"href="style.css">
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+<!--<div id="header">
+
+  </div>
+  <script>
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30|| document.documentElement.scrollTop > 30) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
+}
+</script>
+
+-->
+
+<div id="nav" class="overlay">
+  
+  <a><h1 class="glow" >Authentic Shop        </h1></a>
+  <div class="headd" style="text-align: right; margin-left: 50%; margin-top: 1.5%;" >
+  <a href="authentic.html" target="_self" class=" menu-button">Home</a>
+  <a href="Aboutus.html" target="_blank" class="menu-button">About Us</a>
+  <a href="Products.html" target="_blank" class="menu-button">Our Products</a>
+  <a href="Contact.html" target="_blank" class="menu-button">Contact </a>
+  <a href="cart.html" target="_blank" class="menu-button"><ion-icon name="cart-outline"></ion-icon>Cart<span id="count"> 0 </span></a>
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</div>
+
+
+
+<h1 style="margin-top: 6%; margin-left: 3%;"> <b><i> Welcome! </i> </b></h2>
+<p class="idk" style="margin-left: 3%;"> <h2 style="margin-left: 3%;"><b>Looking for the most authentic outfits? </b><br> <b>Well you came to the perfect place!</b> <br></h3> </p>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="slideshow">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="Slides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="gillets.jpg" style="width:100% ">
+    <div class="text"></div>
+  </div>
+
+  <div class="Slides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="pull.jpg" style="width:100% ">
+    <div class="text"></div>
+  </div>
+
+  <div class="Slides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="colls.jpg" style="width:100% ">
+    <div class="text"></div>
+  </div>
+  
+   <div class="Slides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="jupes.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+   <div class="Slides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="pulls.jpg" style="width:100% ">
+    <div class="text"></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <script> 
+ var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("Slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+</div>
+<br>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<br>
+
+ <div style="margin-left: 5%;">
+
+<table class="about">
+
+<tr>
+<td>
+<img class="omg" style="width:100%; height:100%" src="outfit.jpg">
+</td>
+<td>
+<img class="omg" style="width:100%; height:100%" src="outfit0.jpg"> 
+</td>
+<td>
+<img class="omg" style="width:100%; height:100%" src="outfit1.jpg"> 
+</td>
+</tr>
+<tr>
+<td>
+<p class="tablepara"><b>Welcome to Our Website!<br> Here you'll find the best authentic clothes with the lowest prices.</b>
+</p>
+</td>
+<td>
+<p class="tablepara"><b>You can buy or even sell your clothes <br> And if not pleased you can get your money back!</b>
+</p>
+<td>
+<p class="tablepara"> <b>Explore new outfits! <br> The clothes are so comfortable and AWESOME.</b>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+
+
+
+
+
+ <footer class="foot">
+            <div class="c1">
+                <a href="https://www.facebook.com/azyza.azza.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/aut.henticshop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <p class="p3">
+                    <i> <b> Powered by</b></i> <i><a href="https://www.facebook.com/azyza.azza.3" target="_blank">The Owner</a></i>
+                </p>
+            </div>
+        </footer>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+
+
+
+
+</html>

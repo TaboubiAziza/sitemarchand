@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Authentic Shop </title>
+<link rel="icon" href="aut.jpg" />
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"href="style.css">
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+</head>
+<body>
+<div id="nav" class="overlay">
+  
+  <a><h1 class="glow" >Authentic Shop        </h1></a>
+  <div class="headd" style="text-align: right; margin-left: 50%; margin-top: 1.5%;" >
+  <a href="authentic.html" target="_self" class=" menu-button">Home</a>
+  <a href="Aboutus.html" target="_blank" class="menu-button">About Us</a>
+  <a href="Products.html" target="_blank" class="menu-button">Our Products</a>
+  <a href="Contact.html" target="_blank" class="menu-button">Contact </a>
+  <a href="cart.html" target="_blank" class="menu-button"><ion-icon name="cart-outline"></ion-icon>Cart<span id="count"> 0 </span></a>
+</div>
+  
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</div>
+
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Tops.html" target="_self">Tops</a>
+  <a href="Bottoms.html" target="_self">Bottoms</a>
+  <a href="Shoes.html" target="_self">Shoes</a>
+  <a href="Accessories.html" target="_self">Accessories</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Sort By</button>
+ <script>
+ /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+</div>
+
+<table class="container" style="margin-left: 10%; margin-right: 20%;">
+<tr>
+<td>
+<div class="card">
+  <img src="shoe0.jpg" alt="boots" style="width:100%">
+  <h1>Black boots</h1>
+  <p class="price">35.900</p>
+  <p>Comfy black boots</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe1.jpg" alt="black boots" style="width:100%">
+  <h1>Black Boots</h1>
+  <p class="price">30</p>
+  <p>Who doesn't love black boots?</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe2.jpg" alt="brown boots" style="width:100%">
+  <h1>Brown Boots</h1>
+  <p class="price">30</p>
+  <p>For those winter days</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe3.jpg" alt="blue boots" style="width:100%">
+  <h1>Blue Boots</h1>
+  <p class="price">35.900</p>
+  <p>Winter STYLE</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="shoe4.jpg" alt="black shoes" style="width:100%">
+  <h1>Black Shoes</h1>
+  <p class="price">35.900</p>
+  <p>black shoes</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe5.jpg" alt="shoes" style="width:100%">
+  <h1>Shoes</h1>
+  <p class="price">26.900</p>
+  <p>All the colors are available</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe6.jpg" alt="shoes" style="width:100%">
+  <h1>Colored Shoes</h1>
+  <p class="price">30</p>
+  <p>All colors are available</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe7.jpg" alt="shoes" style="width:100%">
+  <h1>shoes</h1>
+  <p class="price">20</p>
+  <p>All colors Available!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="shoe8.jpg" alt="high heels" style="width:100%">
+  <h1>High Heels</h1>
+  <p class="price">60</p>
+  <p>Shiny transparent heels!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe9.jpg" alt="heels" style="width:100%">
+  <h1>Heels</h1>
+  <p class="price">55.600</p>
+  <p>Pinkkkk HEELS</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe10.jpg" alt="heels" style="width:100%">
+  <h1>BLACK Heels</h1>
+  <p class="price">66.900</p>
+  <p>Who wouldn't LOVE these?</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe1.jpg" alt=" " style="width:100%">
+  <h1> 	BLACK boots </h1>
+  <p class="price">60</p>
+    <p> Who doesn't love black?</p>
+   <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+ <footer class="foot">
+            <div class="c1">
+                <a href="https://www.facebook.com/azyza.azza.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/aut.henticshop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <p class="p3">
+                    <i> <b> Powered by</b></i> <i><a href="https://www.facebook.com/azyza.azza.3" target="_blank">The Owner</a></i>
+                </p>
+            </div>
+        </footer>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Authentic Shop</title>
+        <link rel="icon" href="aut.jpg" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="panier.css" />
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="nav" class="overlay">
+            <a><h1 class="glow" >Authentic Shop        </h1></a>
+  <div class="headd" style="text-align: right; margin-left: 50%; margin-top: 1.5%;" >
+  <a href="authentic.html" target="_self" class=" menu-button">Home</a>
+  <a href="Aboutus.html" target="_blank" class="menu-button">About Us</a>
+  <a href="Products.html" target="_blank" class="menu-button">Our Products</a>
+  <a href="Contact.html" target="_blank" class="menu-button">Contact </a>
+  <a href="cart.html" target="_blank" class="menu-button"><ion-icon name="cart-outline"></ion-icon>Cart<span id="count"> 0 </span></a>
+</div>
+        <div class="shopping-cart">
+            <!-- Title -->
+            <div class="title">
+                Shopping Bag
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h3>ORDER CHECKOUT</h3>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: center;">
+                        <div id="paypal-button-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="foot">
+            <div class="c1">
+                <a href="https://www.facebook.com/azyza.azza.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/aut.henticshop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <p class="p3">
+                    <i> <b> Powered by</b></i> <i><a href="https://www.facebook.com/azyza.azza.3" target="_blank">The Owner</a></i>
+                </p>
+            </div>
+        </footer>
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function () {
+                myFunction();
+            };
+
+            // Get the navbar
+            var navbar = document.getElementById("nav");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+        <script src="https://www.paypal.com/sdk/js?client-id=AW1Qg8t8PdhW19NL-eopEXQwrvEFIJFDPVbe0NjH1NSwijSwY2W8KzvKQppwfN7KvZuOwnn-sZpuR5jA&disable-funding=credit,card&currency=USD"></script>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <script src="js/paypal.js"></script>
+        <script src="js/cart_buttons.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Authentic Shop </title>
+<link rel="icon" href="aut.jpg" />
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"href="style.css">
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+</head>
+<body>
+<div id="nav" class="overlay">
+  
+  <a><h1 class="glow" >Authentic Shop        </h1></a>
+  <div class="headd" style="text-align: right; margin-left: 50%; margin-top: 1.5%;" >
+  <a href="authentic.html" target="_self" class=" menu-button">Home</a>
+  <a href="Aboutus.html" target="_blank" class="menu-button">About Us</a>
+  <a href="Products.html" target="_blank" class="menu-button">Our Products</a>
+  <a href="Contact.html" target="_blank" class="menu-button">Contact </a>
+  <a href="cart.html" target="_blank" class="menu-button"><ion-icon name="cart-outline"></ion-icon>Cart<span id="count"> 0 </span></a>
+</div>
+  
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</div>
+
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Tops.html" target="_self">Tops</a>
+  <a href="Bottoms.html" target="_self">Bottoms</a>
+  <a href="Shoes.html" target="_self">Shoes</a>
+  <a href="Accessories.html" target="_self">Accessories</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Sort By</button>
+ <script>
+ /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+</div>
+
+<table class="container" style="margin-left: 10%; margin-right: 20%; column-gap: 30px;">
+<tr>
+<td>
+<div class="card">
+  <img src="jacket0.jpg" alt="Pink jacket" style="width:100px; height: 100px;">
+  <h1>Jacket</h1>
+  <p class="price">50</p>
+  <p>PINKKKKK</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull4.jpg" alt="blue sweatshirts"  style="width:100px; height: 100px;">
+  <h1>Sweatshirts</h1>
+  <p class="price">24.900</p>
+  <p>BLUEEE.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pants2.jpg" alt="black pants"  style="width:100px; height: 100px;">
+  <h1>Black Casual Pants</h1>
+  <p class="price">30</p>
+  <p>For your casual outfits</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="skirt0.jpg" alt="tile skirt"  style="width:100px; height: 100px;">
+  <h1>Tile Skirt</h1>
+  <p class="price">25.900</p>
+  <p>All you need are the matching shoes!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="pull3.jpg" alt="hearted sweatshirt"  style="width:100px; height: 100px;">
+  <h1>Heart Sweatshirt</h1>
+  <p class="price">25.900</p>
+  <p>Hearted sweatshirt.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull5.jpg" alt="sweatshirts"  style="width:100px; height: 100px;">
+  <h1>sweatshirts</h1>
+  <p class="price">30</p>
+  <p>Perfect sweatshirts for the perfect OUTFIT!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe10.jpg" alt="heels"  style="width:100px; height: 100px;">
+  <h1>BLACK Heels</h1>
+  <p class="price">66.900</p>
+  <p>Who wouldn't LOVE these?</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pull7.jpg" alt="sweatshirts"  style="width:100px; height: 100px;">
+  <h1>Autumn Sweatshirts</h1>
+  <p class="price">45.900</p>
+  <p>Autumn Colored SWEATSHIRTS!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="pull8.jpg" alt="nike sweatshirt"  style="width:100px; height: 100px;">
+  <h1>Nike Sweatshirt</h1>
+  <p class="price">54.900</p>
+  <p>NIKE sweatshirt .</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pants5.jpg" alt="shorts"  style="width:100px; height: 100px;">
+  <h1>Ripped Shorts</h1>
+  <p class="price">50</p>
+  <p>Be cool in those hot Summer days with STYLE!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="acc9.jpg" alt="sun glasses"  style="width:100px; height: 100px;">
+  <h1>Sun GLASS-ES</h1>
+  <p class="price">45</p>
+  <p>Who doesn't LOVE PINKK!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe1.jpg" alt="black boots"  style="width:100px; height: 100px;">
+  <h1>Black Boots</h1>
+  <p class="price">30</p>
+  <p>Who doesn't love black boots?</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="acc0.jpg" alt="sun glasses"  style="width:100px; height: 100px;">
+  <h1>Sun Glasses</h1>
+  <p class="price">50</p>
+  <p>Keep your eyes safe!<br> but add style while you're at it!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="acc1.jpg" alt="bracelets"  style="width:100px; height: 100px;">
+  <h1>Bracelets</h1>
+  <p class="price">15</p>
+  <p>these bracelets are to die for</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="acc2.jpg" alt="glassespurse"  style="width:100px; height: 100px;">
+  <h1>Glasses, matching purse</h1>
+  <p class="price">60</p>
+  <p>All that's left is the matching outfit!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe2.jpg" alt="brown boots"  style="width:100px; height: 100px;">
+  <h1>Brown Boots</h1>
+  <p class="price">30</p>
+  <p>For those winter days</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="shoe4.jpg" alt="black shoes"  style="width:100px; height: 100px;">
+  <h1>Black Shoes</h1>
+  <p class="price">35.900</p>
+  <p>black shoes</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="jaccket2.jpg" alt="colored jacket"  style="width:100px; height: 100px;">
+  <h1>Colored Jacket</h1>
+  <p class="price">65,900</p>
+  <p>Oversized jacket A MOOD.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="acc12.jpg" alt="accessories"  style="width:100px; height: 100px;">
+  <h1>Hair ACCESSORIES</h1>
+  <p class="price">35</p>
+  <p>The perfect hair style EXISTS</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe3.jpg" alt="blue boots"  style="width:100px; height: 100px;">
+  <h1>Blue Boots</h1>
+  <p class="price">35.900</p>
+  <p>Winter STYLE</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="card">
+  <img src="pants0.jpg" alt="denim jeans"  style="width:100px; height: 100px;">
+  <h1>Denim Jeans</h1>
+  <p class="price">55.900</p>
+  <p>Denim Jeans.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="shoe8.jpg" alt="high heels"  style="width:100px; height: 100px;">
+  <h1>High Heels</h1>
+  <p class="price">60</p>
+  <p>Shiny transparent heels!</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pants1.jpg" alt="tile pants"  style="width:100px; height: 100px;">
+  <h1>Tile Pants</h1>
+  <p class="price">35.900</p>
+  <p>White/Brown tile pants.</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="pants2.jpg" alt="black pants"  style="width:100px; height: 100px;">
+  <h1>Black Casual Pants</h1>
+  <p class="price">30</p>
+  <p>For your casual outfits</p>
+  <p><button class="add-cart">Add to Cart</button></p>
+</div>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+ <footer class="foot">
+            <div class="c1">
+                <a href="https://www.facebook.com/azyza.azza.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/aut.henticshop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <p class="p3">
+                    <i> <b> Powered by</b></i> <i><a href="https://www.facebook.com/azyza.azza.3" target="_blank">The Owner</a></i>
+                </p>
+            </div>
+        </footer>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+
+</html>
